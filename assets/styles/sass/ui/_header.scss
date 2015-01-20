@@ -1,24 +1,20 @@
 /*------------------------------------*\
     $CONTENTS
 \*------------------------------------*/
-/**
- * LOGO
-*/
-
-
-
-
-
-/*------------------------------------*\
-    $LOGO
-\*------------------------------------*/
 
 header {
     @include  linear-gradient(to top, #3c3c3c, #222);
     background-repeat: repeat-x;
     min-height: 20px;
-    nav > ul {
-
+    nav {
+        .nav {
+            margin-right: 15px;
+        }
+        a {
+            color: $white;
+            text-decoration: none;
+            font-size: 14px;
+        }
     }
 }
 

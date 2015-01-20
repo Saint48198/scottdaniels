@@ -3703,13 +3703,7 @@ body {
 /*------------------------------------*\
     $CONTENTS
 \*------------------------------------*/
-/**
- * LOGO
-*/
-/*------------------------------------*\
-    $LOGO
-\*------------------------------------*/
-/* line 16, sass/ui/_header.scss */
+/* line 5, sass/ui/_header.scss */
 header {
   background-color: #3c3c3c;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3c3c3c), color-stop(100%, #222));
@@ -3718,8 +3712,18 @@ header {
   background-repeat: repeat-x;
   min-height: 20px;
 }
+/* line 10, sass/ui/_header.scss */
+header nav .nav {
+  margin-right: 15px;
+}
+/* line 13, sass/ui/_header.scss */
+header nav a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 14px;
+}
 
-/* line 25, sass/ui/_header.scss */
+/* line 21, sass/ui/_header.scss */
 .brand {
   font-family: 'Alegreya Sans',sans-serif;
   color: #fff !important;

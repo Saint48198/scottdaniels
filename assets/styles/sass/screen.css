@@ -2865,12 +2865,6 @@ body {
 /*------------------------------------*\
     $CONTENTS
 \*------------------------------------*/
-/**
- * LOGO
-*/
-/*------------------------------------*\
-    $LOGO
-\*------------------------------------*/
 header {
   background-color: #3c3c3c;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3c3c3c), color-stop(100%, #222));
@@ -2878,6 +2872,12 @@ header {
   background-image: linear-gradient(to top,#3c3c3c, #222);
   background-repeat: repeat-x;
   min-height: 20px; }
+  header nav .nav {
+    margin-right: 15px; }
+  header nav a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 14px; }
 
 .brand {
   font-family: 'Alegreya Sans',sans-serif;

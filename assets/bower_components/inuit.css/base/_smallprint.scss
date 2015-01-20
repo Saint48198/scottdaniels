@@ -5,10 +5,9 @@
  * A series of classes for setting tiny type; for use in smallprint etc.
  */
 .smallprint,
-.milli {
+.milli{
     @include font-size($milli-size);
 }
-
-.micro {
+.micro{
     @include font-size($micro-size);
 }
