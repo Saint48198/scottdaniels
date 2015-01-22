@@ -1,12 +1,33 @@
 /*------------------------------------*\
     $CONTENTS
 \*------------------------------------*/
+// general content container
+.container {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+section {
+    padding-top: 15px;
+    border-top: 1px solid $gray2;
+    margin-top: 15px;
+}
+section:first-child {
+    padding-top: 0;
+    border-top: none;
+    margin-top: 0;
+}
+
 // map
 .container-map {
     height: 200px;
 }
 
-
+// skills chart
+.container-chart {
+    width: 500px;
+    margin: 0 auto;
+}
 
 /*------------------------------------*\
     $GRID

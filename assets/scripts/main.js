@@ -73,13 +73,26 @@ google.maps.event.addDomListener(window, 'load', initialize);
         },
         myBarChart = new Chart(ctx).Radar(data, options);;
 
-    $('.e-nav').click(function (e) {
-        e.preventDefault();
+    document.getElementsByTagName("body")[0].addEventListener("click", function (e) {
+        var target = e.target,
+            type = target.tagName.toLowerCase(),
+            url;
 
-        var loc = e.target.href.split('#')[1];
-        $('html, body').animate({
-            scrollTop: $('#' + loc).offset().top - 20
-        }, 1200);
+        if (type === "a") {
+            e.preventDefault();
+            url = target.getAttribute("href");
+        }
+
+        if (target.className.indexOf("e-nav") !== -1) {
+            $("html, body").animate({
+                scrollTop: $('#' + url.split('#')[1]).offset().top - 20
+            }, 1200);
+        }
+
+        if (target.className.indexOf("ext-link") !== -1) {
+            window.open(url, "_blank");
+        }
+
     });
 
 })($);

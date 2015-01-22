@@ -6052,8 +6052,34 @@ label,
     $CONTENTS
 \*------------------------------------*/
 /* line 5, sass/ui/_scaffolding.scss */
+.container {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* line 10, sass/ui/_scaffolding.scss */
+section {
+  padding-top: 15px;
+  border-top: 1px solid #EEE;
+  margin-top: 15px;
+}
+
+/* line 15, sass/ui/_scaffolding.scss */
+section:first-child {
+  padding-top: 0;
+  border-top: none;
+  margin-top: 0;
+}
+
+/* line 22, sass/ui/_scaffolding.scss */
 .container-map {
   height: 200px;
+}
+
+/* line 27, sass/ui/_scaffolding.scss */
+.container-chart {
+  width: 500px;
+  margin: 0 auto;
 }
 
 /*------------------------------------*\
@@ -6075,7 +6101,7 @@ label,
 /*------------------------------------*\
     $GLOBAL
 \*------------------------------------*/
-/* line 23, sass/ui/_typography.scss */
+/* line 19, sass/ui/_typography.scss */
 html {
   font-weight: 300;
   font-style: normal;
@@ -6090,7 +6116,7 @@ html {
 /*------------------------------------*\
     $ICONS
 \*------------------------------------*/
-/* line 59, sass/ui/_typography.scss */
+/* line 42, sass/ui/_typography.scss */
 [data-icon]:before {
   content: attr(data-icon);
   text-transform: none;
@@ -6105,14 +6131,33 @@ html {
 /*------------------------------------*\
     $HEADINGS
 \*------------------------------------*/
+/* line 56, sass/ui/_typography.scss */
+h1 {
+  font-size: 20px;
+  padding: 15px 0;
+  margin: 0;
+}
+
+/* line 61, sass/ui/_typography.scss */
+h2 {
+  font-size: 16px;
+  padding: 0 0 10px;
+  margin: 0;
+}
+
+/* line 68, sass/ui/_typography.scss */
+.container-location h2 {
+  padding-left: 10px;
+}
+
 /*------------------------------------*\
     $LINKS
 \*------------------------------------*/
-/* line 86, sass/ui/_typography.scss */
+/* line 76, sass/ui/_typography.scss */
 a {
   color: #58585B;
 }
-/* line 90, sass/ui/_typography.scss */
+/* line 80, sass/ui/_typography.scss */
 a:hover {
   color: #428bca;
 }
@@ -6120,23 +6165,29 @@ a:hover {
 /*------------------------------------*\
     $OTHER
 \*------------------------------------*/
-/* line 101, sass/ui/_typography.scss */
+/* line 89, sass/ui/_typography.scss */
+p {
+  font-size: 14px;
+  max-width: 700px;
+}
+
+/* line 94, sass/ui/_typography.scss */
 strong,
 .bold {
   font-weight: bold;
 }
 
-/* line 104, sass/ui/_typography.scss */
+/* line 99, sass/ui/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 106, sass/ui/_typography.scss */
+/* line 103, sass/ui/_typography.scss */
 .no-underline {
   text-decoration: none;
 }
 
-/* line 108, sass/ui/_typography.scss */
+/* line 107, sass/ui/_typography.scss */
 ::selection {
   background: #428bca;
   color: #FFF;
@@ -6405,9 +6456,10 @@ header nav a {
   color: #FFF;
   text-decoration: none;
   font-size: 14px;
+  text-transform: capitalize;
 }
 
-/* line 21, sass/ui/_header.scss */
+/* line 22, sass/ui/_header.scss */
 .brand {
   font-family: 'Alegreya Sans',sans-serif;
   color: #fff !important;
@@ -6549,6 +6601,66 @@ input[type=password]:focus {
 /**
  * FOOTER
 */
+/* line 8, sass/ui/_footer.scss */
+footer {
+  padding-bottom: 15px;
+  background: #333;
+  color: #FFF;
+}
+/* line 12, sass/ui/_footer.scss */
+footer nav {
+  padding-top: 15px;
+}
+/* line 14, sass/ui/_footer.scss */
+footer nav > div div {
+  padding-top: 5px;
+  font-size: 12px;
+}
+/* line 18, sass/ui/_footer.scss */
+footer nav li {
+  border-left: 1px solid #FFF;
+  padding-left: 8px;
+  margin-left: 8px;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+/* line 25, sass/ui/_footer.scss */
+footer nav li:first-child {
+  border-left: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+/* line 30, sass/ui/_footer.scss */
+footer nav a {
+  text-decoration: none;
+}
+/* line 34, sass/ui/_footer.scss */
+footer dl {
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 14px;
+}
+/* line 39, sass/ui/_footer.scss */
+footer dt, footer dd {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+/* line 44, sass/ui/_footer.scss */
+footer a {
+  color: #428bca;
+}
+/* line 47, sass/ui/_footer.scss */
+footer h2 {
+  padding-top: 15px;
+  font-size: 14px;
+}
+/* line 52, sass/ui/_footer.scss */
+footer .list-sn a {
+  text-decoration: none;
+  font-size: 28px;
+}
+
 /*------------------------------------*\
     $FOOTER
 \*------------------------------------*/
