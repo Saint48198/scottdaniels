@@ -17,12 +17,12 @@ module.exports = function (grunt) {
             scripts: {
                 files: [
                     'assets/scripts/**/*.js',
-                ],
+                ]
             },
             css: {
                 files: [
                     'assets/styles/**/*.css',
-                ],
+                ]
             },
             sass: {
                 files: ['assets/styles/**/*.scss'],
@@ -31,7 +31,7 @@ module.exports = function (grunt) {
             images: {
                 files: [
                     'assets/images/**/*.{png,jpg,jpeg,webp}'
-                ],
+                ]
             },
             express: {
                 files:  [ 'app.js', '!**/node_modules/**', '!Gruntfile.js' ],
@@ -39,7 +39,7 @@ module.exports = function (grunt) {
                 options: {
                     nospawn: true // Without this option specified express won't be reloaded
                 }
-            },
+            }
         },
 
         // Clean Config
@@ -111,7 +111,7 @@ module.exports = function (grunt) {
             editor: {
                 path: './',
                 app: 'WebStorm'
-            },
+            }
         },
 
         // Rev Config
@@ -229,7 +229,15 @@ module.exports = function (grunt) {
                     dot: true,
                     cwd: 'views',
                     dest: 'dist/views/',
-                    src: '**/*.handlebars',
+                    src: '**/*.handlebars'
+                },
+                {
+                    //for font-awesome
+                    expand: true,
+                    dot: true,
+                    cwd: 'assets/bower_components/font-awesome',
+                    src: ['fonts/*.*'],
+                    dest: 'dist/assets/bower_components/font-awesome'
                 }]
             },
             styles: {
@@ -238,7 +246,7 @@ module.exports = function (grunt) {
                 cwd: 'assets/styles',
                 dest: '.tmp/styles/',
                 src: '{,*/}*.css'
-            },
+            }
         },
 
         // Concurrent Config
@@ -248,7 +256,7 @@ module.exports = function (grunt) {
                 'svgmin',
                 'htmlmin'
             ]
-        },
+        }
     });
 
     // Register Tasks
@@ -268,7 +276,7 @@ module.exports = function (grunt) {
         'express:dev',
         'watch'
     ]);
-    
+
 
     // Build
     grunt.registerTask('build', 'Build production ready assets and views.', [
