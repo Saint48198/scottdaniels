@@ -17,27 +17,23 @@
 /*------------------------------------*\
     $NAV PRIMARY
 \*------------------------------------*/
-@media (min-width: $desktop) {
-    .nav {
-        > li {
-            float: left;
-            margin-left: 10px;
-            > a {
-                padding: 15px 0;
-            }
-        }
-        li:first-child {
-            margin-left: 0;
+.nav {
+    > li {
+        float: left;
+        margin-left: 10px;
+        > a {
+            padding: 15px 0;
         }
     }
-    .nav:after{
-        clear: both;
-        content: "";
-        display: block;
+    li:first-child {
+        margin-left: 0;
     }
 }
-
-
+.nav:after{
+    clear: both;
+    content: "";
+    display: block;
+}
 
 
 /*------------------------------------*\

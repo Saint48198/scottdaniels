@@ -6491,28 +6491,27 @@ header nav a {
 /*------------------------------------*\
     $NAV PRIMARY
 \*------------------------------------*/
-@media (min-width: 768px) {
-  /* line 22, sass/ui/_navs.scss */
-  .nav > li {
-    float: left;
-    margin-left: 10px;
-  }
-  /* line 25, sass/ui/_navs.scss */
-  .nav > li > a {
-    padding: 15px 0;
-  }
-  /* line 29, sass/ui/_navs.scss */
-  .nav li:first-child {
-    margin-left: 0;
-  }
-
-  /* line 33, sass/ui/_navs.scss */
-  .nav:after {
-    clear: both;
-    content: "";
-    display: block;
-  }
+/* line 21, sass/ui/_navs.scss */
+.nav > li {
+  float: left;
+  margin-left: 10px;
 }
+/* line 24, sass/ui/_navs.scss */
+.nav > li > a {
+  padding: 15px 0;
+}
+/* line 28, sass/ui/_navs.scss */
+.nav li:first-child {
+  margin-left: 0;
+}
+
+/* line 32, sass/ui/_navs.scss */
+.nav:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
 /*------------------------------------*\
     $NAV MOBILE
 \*------------------------------------*/

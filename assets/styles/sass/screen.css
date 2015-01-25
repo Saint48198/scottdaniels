@@ -4604,19 +4604,19 @@ header {
 /*------------------------------------*\
     $NAV PRIMARY
 \*------------------------------------*/
-@media (min-width: 768px) {
-  .nav > li {
-    float: left;
-    margin-left: 10px; }
-    .nav > li > a {
-      padding: 15px 0; }
-  .nav li:first-child {
-    margin-left: 0; }
+.nav > li {
+  float: left;
+  margin-left: 10px; }
+  .nav > li > a {
+    padding: 15px 0; }
+.nav li:first-child {
+  margin-left: 0; }
 
-  .nav:after {
-    clear: both;
-    content: "";
-    display: block; } }
+.nav:after {
+  clear: both;
+  content: "";
+  display: block; }
+
 /*------------------------------------*\
     $NAV MOBILE
 \*------------------------------------*/
