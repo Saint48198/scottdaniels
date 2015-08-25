@@ -1,0 +1,157 @@
+{
+    "name": "Scott R Daniels",
+    "address": {
+        "street": "1349 Hawthorne Ave.",
+        "city": "Ypsilanti",
+        "state": "Michigan",
+        "zip": "48198"
+    },
+    "phone": "734.678.1339",
+    "email": "daniels.scott.r@gmail.com",
+    "summary": "User experience expert and software engineer with over 10 years experience in creating web standards based solutions (B2B & B2C) for non-profits, automotive, accounting, educational, clothing and manufacturing companies ranging from the very small to Fortune 500 in size. Particularly interested in creating JavaScript applications for both the desktop and mobile devices.",
+    "skills": [
+        "Hand-coding standards-compliant and cross-browser-compatible HTML/XHTML and CSS.",
+        "Functional and Object-Oriented (OO) JavaScript. Experience using wide range of libraries such as Backbone, jQuery, lodash and others.",
+        "Accessibility, usability, system analysis/design and SEO",
+        "Exceptionally good communication and demonstration skills.",
+        "Back-end &amp; DB Languages:  PHP, Python, Node.js, SQL",
+        "Software:  IntelliJ IDEA, Photoshop, GIT, NPM, Bower, Yeoman, Grunt"
+    ],
+    "experience": [
+        {
+            "id": 1000,
+            "title": "Product Support Specialist",
+            "company": "Thomson Tax &amp; Accounting",
+            "location": "Dexter, MI",
+            "start": "11-2000",
+            "end": "5-2006",
+            "desc": "Worked in call center as technical support for desktop and web based accounting software. Duties also included testing pre-released software, software training to customers and building brochure style websites for customers.",
+            "skills": [
+                "customer service", "Microsoft Windows", "Thomson Accounting Software", "HTML", "CSS", "Adobe Photoshop"
+            ],
+            "current": false
+        },
+        {
+            "id": 1001,
+            "title": "Webmaster",
+            "company": "General RV",
+            "location": "Wixom, MI",
+            "start": "5-2006",
+            "end": "2-2007",
+            "desc": "",
+            "skills": [],
+            "current": false
+        },
+        {
+            "id": 1002,
+            "title": "",
+            "company": "",
+            "location": "",
+            "start": "",
+            "end": "",
+            "desc": "",
+            "skills": [],
+            "current": false
+        },
+        {
+            "id": 1003,
+            "title": "",
+            "company": "",
+            "location": "",
+            "start": "",
+            "end": "",
+            "desc": "",
+            "skills": [],
+            "current": false
+        },
+        {
+            "id": 1004,
+            "title": "",
+            "company": "",
+            "location": "",
+            "start": "",
+            "end": "",
+            "desc": "",
+            "skills": [],
+            "current": false
+        },
+        {
+            "id": 1005,
+            "title": "",
+            "company": "",
+            "location": "",
+            "start": "",
+            "end": "",
+            "desc": "",
+            "skills": [],
+            "current": false
+        },
+        {
+            "id": 1006,
+            "title": "",
+            "company": "",
+            "location": "",
+            "start": "",
+            "end": "",
+            "desc": "",
+            "skills": [],
+            "current": false
+        },
+        {
+            "id": 1007,
+            "title": "",
+            "company": "",
+            "location": "",
+            "start": "",
+            "end": "",
+            "desc": "",
+            "skills": [],
+            "current": false
+        },
+        {
+            "id": 1008,
+            "title": "",
+            "company": "",
+            "location": "",
+            "start": "",
+            "end": "",
+            "desc": "",
+            "skills": [],
+            "current": false
+        }
+    ],
+    "education": [
+        {
+            "id": 1000,
+            "degree": "",
+            "major": "",
+            "school": "",
+            "start": "",
+            "end": ""
+        },
+        {
+            "id": 1001,
+            "degree": "",
+            "major": "",
+            "school": "",
+            "start": "",
+            "end": ""
+        },
+        {
+            "id": 1002,
+            "degree": "",
+            "major": "",
+            "school": "",
+            "start": "",
+            "end": ""
+        },
+        {
+            "id": 1003,
+            "degree": "",
+            "major": "",
+            "school": "",
+            "start": "",
+            "end": ""
+        }
+    ]
+}
