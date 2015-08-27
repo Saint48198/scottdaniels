@@ -29,6 +29,8 @@
             "skills": [
                 "customer service", "Microsoft Windows", "Thomson Accounting Software", "HTML", "CSS", "Adobe Photoshop"
             ],
+            "accomplishments": [],
+            "duties": [],
             "current": false
         },
         {
@@ -38,120 +40,168 @@
             "location": "Wixom, MI",
             "start": "5-2006",
             "end": "2-2007",
-            "desc": "",
+            "desc": "Responsible for managing, designing and development of corporate website and online parts store. Duties included design and creation of marketing materials for trade shows. ",
             "skills": [],
+            "accomplishments": [
+                "Total redesigned and refactoring of corporate website, which included user testing, paper wire framing and web standards development practices (HTML, CSS and JavaScript)",
+                "Developed e-commerce parts website using ASP.Net, HTML, CSS and JavaScript."
+            ],
+            "duties": [],
             "current": false
         },
         {
             "id": 1002,
-            "title": "",
-            "company": "",
-            "location": "",
-            "start": "",
-            "end": "",
-            "desc": "",
+            "title": "Interface Developer",
+            "company": "Fry",
+            "location": "Ann Arbor, MI",
+            "start": "4-2007",
+            "end": "12-2009",
+            "desc": "Worked as part of the development team which included software engineers, designers, information architects, and project managers to create and maintain web sites and applications for medium to very large companies using a custom e-commerce Java (MVC) framework or ASP.",
             "skills": [],
+            "accomplishments": [],
+            "duties": [
+                "Developed HTML/CSS tableless templates from wireframes and high –res comps.",
+                "Hand-code standards-compliant and cross-browser-compatible XHTML and CSS.",
+                "Follow style guides and conventions",
+                "Implement JavaScript (jQuery and Object-Oriented) , AJAX, and DHTML  user interface interactions.",
+                "Integration of front-end code (HTML/CSS/JavaScript) with Java/ ASP bank-end.",
+                "Created and maintained modules for a custom CMS application using XML and XSLT.",
+                "Developed Flash applications using Object-Oriented (OO) Action Script 3 that received data via XML/RSS Feeds and two-way interaction with HTML/JavaScript."
+            ],
             "current": false
         },
         {
             "id": 1003,
-            "title": "",
-            "company": "",
-            "location": "",
-            "start": "",
-            "end": "",
-            "desc": "",
+            "title": "Front End Developer",
+            "company": "MS&L Worldwide",
+            "location": "Ann Arbor, MI",
+            "start": "1-2010",
+            "end": "5-2010",
+            "desc": "Was part of an in-house web development team for an PR firm that specialized in the use of social media (Twitter, FaceBook and etc) for large corporate clients such as GM and P&G. The development team included front end developers, PHP/Ruby developers, designers, 3D animation developers and project/account managers.",
             "skills": [],
+            "accomplishments": [],
+            "duties": [
+                "Developed and maintained Flash applications/games/assets using Object-Oriented (OO) Action Script 3 and Action Script 2.",
+                "Integration of third party APIs such Twitter, YouTube, and ShareThis.",
+                "Developed HTML/CSS tableless templates from wireframes and high –res comps.",
+                "Hand-code standards-compliant and cross-browser-compatible XHTML and CSS.",
+                "Implement JavaScript (jQuery and Object-Oriented), AJAX and DHTML user interface interactions.",
+                "Development and deployment of WordPress blogs which included the creation of custom page templates."
+            ],
             "current": false
         },
         {
             "id": 1004,
-            "title": "",
-            "company": "",
-            "location": "",
-            "start": "",
-            "end": "",
-            "desc": "",
+            "title": "Web Developer",
+            "company": "Self - Employed",
+            "location": "Ypsilanti, MI",
+            "start": "8-2005",
+            "end": "6-2011",
+            "desc": "Web development company that specialized in the design, development and the deployment of websites for small companies, non-profits and artist (visual and audio).<br>Services:<ul><li>creation or redesign of logos</li><li>website (re)design</li><li>usability assessment and recommendations</li><li>(x)HTML and CSS</li><li>JavaScript (jQuery, DHTML and AJAX)</li><li>Flash (Action Script 2 and 3)</li><li>PHP and WordPress</li></ul>",
             "skills": [],
+            "accomplishments": [],
+            "duties": [],
             "current": false
         },
         {
             "id": 1005,
-            "title": "",
-            "company": "",
-            "location": "",
-            "start": "",
-            "end": "",
-            "desc": "",
+            "title": "Sr Web Front End Developer",
+            "company": "Camelot Venture Group",
+            "location": "Farmington Hills, MI",
+            "start": "5-2010",
+            "end": "7-2011",
+            "desc": "Worked as the lead UI developer for a social alternative payment service and e-commerce startup company. Responsibilities include setting standards for UI technologies, determining which libraries to use and primary developer of UI for the application.",
             "skills": [],
+            "accomplishments": [
+                "Development of a JavaScript Bookmarklet that allows users to select products from almost any site and save them to their want list.",
+                "Created JavaScript application that calculates bill balances based on the number of users in a deal, manual amounts keyed in or by percentages. Also include AJAX error and form submission.",
+                "Development of a WANT API which allows third parties to integrate WANT button on their site that allows their users to add items from the third site back to the social wish list site.",
+                "Created product/image search using Google Base and Search APIs."
+            ],
+            "duties": [],
             "current": false
         },
         {
             "id": 1006,
-            "title": "",
-            "company": "",
-            "location": "",
-            "start": "",
-            "end": "",
-            "desc": "",
+            "title": "Tech Lead",
+            "company": "Team Detroit",
+            "location": "Dearborn, MI",
+            "start": "5-2011",
+            "end": "9-2011",
+            "desc": "Worked as UI developer at a major advertising agency that specialized in the automotive industry. Technologies used included HTML, CSS, JavaScript (jQuery), Java (FreeMarker), PHP, and MySQL.",
             "skills": [],
+            "accomplishments": [
+                "Created contest application that allows users to vote on advertising campaigns. Application include administrative area that allowed for adding, removing, updating and tracking of contest entries by internal staff."
+            ],
+            "duties": [],
             "current": false
         },
         {
             "id": 1007,
-            "title": "",
-            "company": "",
-            "location": "",
-            "start": "",
-            "end": "",
-            "desc": "",
+            "title": "Senior Web Developer",
+            "company": "Digital Roots",
+            "location": "Novi, MI",
+            "start": "9-2011",
+            "end": "3-2013",
+            "desc": "Worked as lead UI developer and User Experience Designer for a social media monitoring and analytics startup company.",
             "skills": [],
+            "accomplishments": [
+                "Design and development of reporting package using Fusion Charts and a custom JavaScript MV* framework.",
+                "Design and development of JavaScript MV* application for processing big data using Backbone, jQuery and other JavaScript libraries."
+
+            ],
+            "duties": [],
             "current": false
         },
         {
             "id": 1008,
-            "title": "",
-            "company": "",
-            "location": "",
-            "start": "",
+            "title": "Software Engineer",
+            "company": "ProQuest",
+            "location": "Ann Arbor, MI",
+            "start": "4-2013",
             "end": "",
-            "desc": "",
+            "desc": "Worked as lead UI developer for the K12 group within the company. Responsibilities included setting UI standards, determining what UI libraries would be used with the group and working as point of contact for graphic designers and product owners on all major UI related projects.",
             "skills": [],
-            "current": false
+            "accomplishments": [
+                "Lead UI development and design of single page application based on Backbone.js, Handlebars.js and other JavaScript libraries.",
+                "Created Yeoman generator for creating new projects using Backbone.js or Angular.js"
+            ],
+            "duties": [],
+            "current": true
         }
     ],
     "education": [
         {
             "id": 1000,
-            "degree": "",
-            "major": "",
-            "school": "",
-            "start": "",
-            "end": ""
+            "degree": "Bachelor of Arts (BA)",
+            "major": "Business Administration, Emphasis in Marketing",
+            "school": "Siena Heights University",
+            "start": "1996",
+            "end": "2000"
         },
         {
             "id": 1001,
-            "degree": "",
-            "major": "",
-            "school": "",
-            "start": "",
-            "end": ""
+            "degree": "Master of Business Administration (MBA)",
+            "major": "E-Business",
+            "school": "University of Phoenix",
+            "start": "2002",
+            "end": "2005"
         },
         {
             "id": 1002,
-            "degree": "",
-            "major": "",
-            "school": "",
-            "start": "",
-            "end": ""
+            "degree": "Associate in Applied Science (AAS)",
+            "major": "Internet Professional",
+            "school": "Washtenaw Community College",
+            "start": "2005",
+            "end": "2009"
         },
         {
             "id": 1003,
-            "degree": "",
-            "major": "",
-            "school": "",
-            "start": "",
-            "end": ""
+            "degree": "Master of Science (MS)",
+            "major": "Computer Information Systems",
+            "school": "Boston University",
+            "start": "2014",
+            "end": "2017"
         }
     ]
 }
