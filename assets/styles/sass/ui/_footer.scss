@@ -6,53 +6,10 @@
 */
 
 footer {
-    padding-bottom: 15px;
-    background: $black2;
-    color: $white;
-    nav {
-        padding-top: 15px;
-        > div div {
-            padding-top: 5px;
-            font-size: 12px;
-        }
-        li {
-            border-left: 1px solid $white;
-            padding-left: 8px;
-            margin-left: 8px;
-            text-transform: capitalize;
-            font-size: 14px;
-        }
-        li:first-child {
-            border-left: none;
-            padding-left: 0;
-            margin-left: 0;
-        }
-        a {
-            text-decoration: none;
-        }
-    }
-    dl {
-        margin: 0 0 10px;
-        padding: 0;
-        font-size: 14px;
-    }
-    dt, dd {
-        display: block;
-        margin: 0;
-        padding: 0;
-    }
-    a {
-        color: $brand-color;
-    }
-    h2 {
-        padding-top: 15px;
-        font-size: 14px;
-    }
-    .list-sn {
-        a {
-            text-decoration: none;
-            font-size: 28px;
-        }
+    padding: 0.9375em 0.625em;
+    text-align: right;
+    span {
+        font-size: 0.625em;
     }
 }
 

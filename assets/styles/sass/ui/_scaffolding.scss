@@ -1,32 +1,80 @@
 /*------------------------------------*\
     $CONTENTS
 \*------------------------------------*/
+main {
+    background: $white;
+    padding-top: 1.875em;
+    color: $black2;
+}
 // general content container
 .container {
-    padding-right: 10px;
-    padding-left: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    .col {
+        width: 50%;
+        padding: 1.5625em 0.9375em;
+        -moz-box-sizing: border-box;
+             box-sizing: border-box;
+        .inner {
+            padding: 0 3.875em;
+        }
+    }
 }
 
-section {
-    padding-top: 15px;
-    border-top: 1px solid $gray2;
-    margin-top: 15px;
-}
-section:first-child {
-    padding-top: 0;
-    border-top: none;
-    margin-top: 0;
+
+
+// image
+figure {
+    text-align: center;
+    padding: 0.3125em;
+    border: 1px solid $gray6;
+
+    display: inline-block;
+    img {
+        max-width: 300px;
+        height: auto;
+    }
 }
 
-// map
-.container-map {
-    height: 200px;
+// definition list
+dl {
+    dt {
+        float: left;
+        margin-right: 0.3125em;
+        &:after {
+            content: ":"
+        }
+    }
 }
 
-// skills chart
-.container-chart {
-    width: 500px;
-    margin: 0 auto;
+// paragraph list
+.list-paragraph {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0.9375em;
+    li {
+        display: inline;
+        margin-left: -0.25em;
+        &:before {
+            content: ", ";
+        }
+    }
+    li:nth-child(1) {
+        margin-left: 0;
+        &:before {
+            content: "";
+        }
+    }
+    li:nth-last-child(1) {
+        margin-left: 0;
+        &:before {
+            content: " and ";
+        }
+    }
+}
+
+.list-sn {
+    font-size: 2em;
 }
 
 /*------------------------------------*\

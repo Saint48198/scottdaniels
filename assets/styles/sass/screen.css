@@ -4288,26 +4288,57 @@ label,
 /*------------------------------------*\
     $CONTENTS
 \*------------------------------------*/
+main {
+  background: #FFF;
+  padding-top: 1.875em;
+  color: #333; }
+
 .container {
-  padding-right: 10px;
-  padding-left: 10px; }
+  display: flex;
+  flex-wrap: nowrap; }
+  .container .col {
+    width: 50%;
+    padding: 1.5625em 0.9375em;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    .container .col .inner {
+      padding: 0 3.875em; }
 
-section {
-  padding-top: 15px;
-  border-top: 1px solid #EEE;
-  margin-top: 15px; }
+figure {
+  text-align: center;
+  padding: 0.3125em;
+  border: 1px solid #58585B;
+  display: inline-block; }
+  figure img {
+    max-width: 300px;
+    height: auto; }
 
-section:first-child {
-  padding-top: 0;
-  border-top: none;
-  margin-top: 0; }
+dl dt {
+  float: left;
+  margin-right: 0.3125em; }
+  dl dt:after {
+    content: ":"; }
 
-.container-map {
-  height: 200px; }
+.list-paragraph {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.9375em; }
+  .list-paragraph li {
+    display: inline;
+    margin-left: -0.25em; }
+    .list-paragraph li:before {
+      content: ", "; }
+  .list-paragraph li:nth-child(1) {
+    margin-left: 0; }
+    .list-paragraph li:nth-child(1):before {
+      content: ""; }
+  .list-paragraph li:nth-last-child(1) {
+    margin-left: 0; }
+    .list-paragraph li:nth-last-child(1):before {
+      content: " and "; }
 
-.container-chart {
-  width: 500px;
-  margin: 0 auto; }
+.list-sn {
+  font-size: 2em; }
 
 /*------------------------------------*\
     $GRID
@@ -4329,8 +4360,8 @@ section:first-child {
     $GLOBAL
 \*------------------------------------*/
 html {
-  font-weight: 300;
-  font-style: normal; }
+  font: normal 300 100% Helvetica, Arial, sans-serif;
+  line-height: 1.25; }
 
 /*------------------------------------*\
     $COLORS
@@ -4355,17 +4386,17 @@ html {
     $HEADINGS
 \*------------------------------------*/
 h1 {
-  font-size: 20px;
-  padding: 15px 0;
+  font-size: 1.25em;
+  padding: 0.9375em 0;
   margin: 0; }
 
 h2 {
-  font-size: 16px;
-  padding: 0 0 10px;
+  font-size: 1em;
+  padding: 0 0 0.625em;
   margin: 0; }
 
 .container-location h2 {
-  padding-left: 10px; }
+  padding-left: 0.625em; }
 
 /*------------------------------------*\
     $LINKS
@@ -4379,7 +4410,7 @@ a {
     $OTHER
 \*------------------------------------*/
 p {
-  font-size: 14px;
+  font-size: 0.875em;
   max-width: 700px; }
 
 strong,
@@ -4400,6 +4431,13 @@ em {
   background: #428bca;
   color: #FFF; }
 
+@font-face {
+  font-family: Ampersand;
+  src: local("Baskerville"), local("Goudy Old Style"), local("Garamond"), local("Palatino");
+  unicode-range: U+26; }
+.amp {
+  font-family: Ampersand, Helvetica, sans-serif; }
+
 /*------------------------------------*\
     $CONTENTS
 \*------------------------------------*/
@@ -4409,11 +4447,14 @@ em {
  * BORDERS
  * BLOCKS
 */
+body {
+  background: #333; }
+
 /*------------------------------------*\
     $TEXT
 \*------------------------------------*/
 body {
-  color: #808284; }
+  color: #FFF; }
 
 .white {
   color: #FFF; }
@@ -4562,32 +4603,25 @@ body {
     $CONTENTS
 \*------------------------------------*/
 header {
-  background-color: #3c3c3c;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3c3c3c), color-stop(100%, #222));
-  background-image: -webkit-linear-gradient(bottom, #3c3c3c, #222);
-  background-image: linear-gradient(to top,#3c3c3c, #222);
-  background-repeat: repeat-x;
-  min-height: 20px; }
-  header nav .nav {
-    margin-right: 15px; }
-  header nav a {
-    color: #FFF;
-    text-decoration: none;
-    font-size: 14px;
-    text-transform: capitalize; }
-
-.brand {
-  font-family: 'Alegreya Sans',sans-serif;
-  color: #fff !important;
-  font-size: 18px;
-  background: #333;
-  width: 60px;
-  height: 20px;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  transition: background-color 1s linear,ease-in;
-  text-decoration: none; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 2.1875em;
+  background: #888; }
+  header .logo {
+    text-align: center;
+    width: 9.375rem;
+    height: 6.25rem;
+    -webkit-border-radius: 0 0 6.25rem 6.25rem;
+    -moz-border-radius: 0 0 6.25rem 6.25rem;
+    border-radius: 0 0 6.25rem 6.25rem;
+    background: #555;
+    margin: 0 auto;
+    font: 3.25rem 'Oleo Script', cursive;
+    line-height: 1.75;
+    text-shadow: 3px 3px #000, -3px -3px #000, 3px -3px #000, -3px 3px #000; }
 
 /*------------------------------------*\
     $CONTENTS
@@ -4698,42 +4732,10 @@ input[type=password]:focus {
  * FOOTER
 */
 footer {
-  padding-bottom: 15px;
-  background: #333;
-  color: #FFF; }
-  footer nav {
-    padding-top: 15px; }
-    footer nav > div div {
-      padding-top: 5px;
-      font-size: 12px; }
-    footer nav li {
-      border-left: 1px solid #FFF;
-      padding-left: 8px;
-      margin-left: 8px;
-      text-transform: capitalize;
-      font-size: 14px; }
-    footer nav li:first-child {
-      border-left: none;
-      padding-left: 0;
-      margin-left: 0; }
-    footer nav a {
-      text-decoration: none; }
-  footer dl {
-    margin: 0 0 10px;
-    padding: 0;
-    font-size: 14px; }
-  footer dt, footer dd {
-    display: block;
-    margin: 0;
-    padding: 0; }
-  footer a {
-    color: #428bca; }
-  footer h2 {
-    padding-top: 15px;
-    font-size: 14px; }
-  footer .list-sn a {
-    text-decoration: none;
-    font-size: 28px; }
+  padding: 0.9375em 0.625em;
+  text-align: right; }
+  footer span {
+    font-size: 0.625em; }
 
 /*------------------------------------*\
     $FOOTER

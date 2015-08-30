@@ -9,14 +9,16 @@
 */
 
 
-
+body {
+    background: $black2;
+}
 
 
 /*------------------------------------*\
     $TEXT
 \*------------------------------------*/
 
-body                                { color: $gray5; }
+body                                { color: $white; }
 
 // Grays
 .white                              { color: $white; }

@@ -3,32 +3,30 @@
 \*------------------------------------*/
 
 header {
-    @include  linear-gradient(to top, #3c3c3c, #222);
-    background-repeat: repeat-x;
-    min-height: 20px;
-    nav {
-        .nav {
-            margin-right: 15px;
-        }
-        a {
-            color: $white;
-            text-decoration: none;
-            font-size: 14px;
-            text-transform: capitalize;
-        }
-    }
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 
-.brand {
-    font-family: 'Alegreya Sans',sans-serif;
-    color: #fff !important;
-    font-size: 18px;
-    background: $black2;
-    width: 60px;
-    height: 20px;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    transition: background-color 1s linear,ease-in;
-    text-decoration: none;
+    height: 2.1875em;
+    background: #888;
+    .logo {
+        text-align: center;
+        width: 9.375rem;
+        height: 6.25rem;
+
+        -webkit-border-radius: 0 0 6.25rem 6.25rem;
+        -moz-border-radius: 0 0 6.25rem 6.25rem;
+        border-radius: 0 0 6.25rem 6.25rem;
+        background: #555;
+
+        margin: 0 auto;
+
+        font: 3.25rem 'Oleo Script', cursive;
+        line-height: 1.75;
+
+        text-shadow: 3px 3px $black1, -3px -3px $black1,
+                     3px -3px $black1, -3px 3px $black1;
+    }
 }

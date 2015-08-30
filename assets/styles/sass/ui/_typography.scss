@@ -17,8 +17,8 @@
 \*------------------------------------*/
 
 html {
-    font-weight: 300;
-    font-style: normal;
+    font: normal 300 100% Helvetica, Arial, sans-serif;
+    line-height: 1.25;
 }
 
 /*------------------------------------*\
@@ -54,19 +54,19 @@ html {
     $HEADINGS
 \*------------------------------------*/
 h1 {
-    font-size: 20px;
-    padding: 15px 0;
+    font-size: 1.25em;
+    padding: 0.9375em 0;
     margin: 0;
 }
 h2 {
-    font-size: 16px;
-    padding: 0 0 10px;
+    font-size: 1em;
+    padding: 0 0 0.625em;
     margin: 0;
 }
 
 // home page
 .container-location h2 {
-    padding-left: 10px;
+    padding-left: 0.625em;
 }
 
 /*------------------------------------*\
@@ -87,7 +87,7 @@ a {
 \*------------------------------------*/
 
 p {
-    font-size: 14px;
+    font-size: 0.875em;
     max-width: 700px;
 }
 
@@ -112,4 +112,17 @@ em {
 ::-moz-selection {
     background: $color1;
     color: $white;
+}
+
+@font-face {
+    font-family: Ampersand;
+    src: local('Baskerville'),
+         local('Goudy Old Style'),
+         local('Garamond'),
+         local('Palatino');
+    unicode-range: U+26;
+}
+
+.amp {
+    font-family: Ampersand, Helvetica, sans-serif;
 }
