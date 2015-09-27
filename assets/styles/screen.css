@@ -6056,88 +6056,133 @@ main {
   background: #FFF;
   padding-top: 1.875em;
   color: #333;
+  width: 50rem;
+  margin: 0 auto;
+}
+/* line 11, sass/ui/_scaffolding.scss */
+main .logo {
+  margin-top: -0.625rem;
+  float: right;
 }
 
-/* line 10, sass/ui/_scaffolding.scss */
+/* line 17, sass/ui/_scaffolding.scss */
 .container {
   display: flex;
   flex-wrap: nowrap;
 }
-/* line 13, sass/ui/_scaffolding.scss */
+/* line 20, sass/ui/_scaffolding.scss */
 .container .col {
-  width: 50%;
-  padding: 1.5625em 0.9375em;
+  width: 75%;
+  padding: 0 0.9375em;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 18, sass/ui/_scaffolding.scss */
+/* line 25, sass/ui/_scaffolding.scss */
 .container .col .inner {
   padding: 0 3.875em;
 }
-
-/* line 27, sass/ui/_scaffolding.scss */
-figure {
-  text-align: center;
-  padding: 0.3125em;
-  border: 1px solid #58585B;
-  display: inline-block;
+/* line 29, sass/ui/_scaffolding.scss */
+.container .profile-image {
+  width: 25%;
+  box-sizing: border-box;
+  padding: 0 0 0 0.625em;
+  -webkit-order: -1;
+  order: -1;
+}
+/* line 30, sass/ui/_scaffolding.scss */
+.container .profile-image .inner {
+  padding: 0;
 }
 /* line 33, sass/ui/_scaffolding.scss */
+.container .profile-image .list-sn {
+  margin-left: 1.5625rem;
+}
+/* line 36, sass/ui/_scaffolding.scss */
+.container .profile-image figure {
+  margin-bottom: 0;
+}
+
+/* line 50, sass/ui/_scaffolding.scss */
+figure {
+  text-align: center;
+  border: 1px solid #58585B;
+  box-shadow: inset 0 5px 25px 0 #D8D8D8;
+  display: inline-block;
+}
+/* line 57, sass/ui/_scaffolding.scss */
 figure img {
-  max-width: 300px;
+  max-width: 200px;
+  width: 100%;
   height: auto;
 }
 
-/* line 41, sass/ui/_scaffolding.scss */
+/* line 66, sass/ui/_scaffolding.scss */
 dl dt {
   float: left;
   margin-right: 0.3125em;
 }
-/* line 44, sass/ui/_scaffolding.scss */
+/* line 69, sass/ui/_scaffolding.scss */
 dl dt:after {
   content: ":";
 }
 
-/* line 51, sass/ui/_scaffolding.scss */
+/* line 76, sass/ui/_scaffolding.scss */
 .list-paragraph {
   list-style: none;
   padding: 0;
   margin: 0 0 0.9375em;
 }
-/* line 55, sass/ui/_scaffolding.scss */
+/* line 80, sass/ui/_scaffolding.scss */
 .list-paragraph li {
   display: inline;
   margin-left: -0.25em;
 }
-/* line 58, sass/ui/_scaffolding.scss */
+/* line 83, sass/ui/_scaffolding.scss */
 .list-paragraph li:before {
   content: ", ";
 }
-/* line 62, sass/ui/_scaffolding.scss */
+/* line 87, sass/ui/_scaffolding.scss */
 .list-paragraph li:nth-child(1) {
   margin-left: 0;
 }
-/* line 64, sass/ui/_scaffolding.scss */
+/* line 89, sass/ui/_scaffolding.scss */
 .list-paragraph li:nth-child(1):before {
   content: "";
 }
-/* line 68, sass/ui/_scaffolding.scss */
+/* line 93, sass/ui/_scaffolding.scss */
 .list-paragraph li:nth-last-child(1) {
   margin-left: 0;
 }
-/* line 70, sass/ui/_scaffolding.scss */
+/* line 95, sass/ui/_scaffolding.scss */
 .list-paragraph li:nth-last-child(1):before {
   content: " and ";
 }
 
-/* line 76, sass/ui/_scaffolding.scss */
+/* line 101, sass/ui/_scaffolding.scss */
 .list-sn {
   font-size: 2em;
 }
 
-/*------------------------------------*\
-    $GRID
-\*------------------------------------*/
+/* line 105, sass/ui/_scaffolding.scss */
+.logo {
+  opacity: 0.8;
+  box-sizing: border-box;
+  color: #FFF;
+  text-align: center;
+  width: 8rem;
+  height: 8rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #555;
+  margin: 0 auto;
+  font: 4.75rem 'Oleo Script', cursive;
+  line-height: 1.75;
+  border: 1px dotted #fff;
+  box-shadow: 0 0 0 5px #4679bd;
+  text-shadow: 3px 3px #000, -3px -3px #000, 3px -3px #000, -3px 3px #000;
+}
+
 /*------------------------------------*\
     $CONTENTS
 \*------------------------------------*/
@@ -6508,27 +6553,14 @@ body {
 \*------------------------------------*/
 /* line 5, sass/ui/_header.scss */
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  height: 2.1875em;
-  background: #888;
-}
-/* line 14, sass/ui/_header.scss */
-header .logo {
-  text-align: center;
-  width: 9.375rem;
-  height: 6.25rem;
-  -webkit-border-radius: 0 0 6.25rem 6.25rem;
-  -moz-border-radius: 0 0 6.25rem 6.25rem;
-  border-radius: 0 0 6.25rem 6.25rem;
-  background: #555;
+  width: 50rem;
+  height: 3.125em;
   margin: 0 auto;
-  font: 3.25rem 'Oleo Script', cursive;
-  line-height: 1.75;
-  text-shadow: 3px 3px #000, -3px -3px #000, 3px -3px #000, -3px 3px #000;
+  text-align: center;
+}
+/* line 11, sass/ui/_header.scss */
+header .logo {
+  display: none;
 }
 
 /*------------------------------------*\
@@ -6659,10 +6691,14 @@ input[type=password]:focus {
 */
 /* line 8, sass/ui/_footer.scss */
 footer {
+  background: #555;
+  width: 50rem;
   padding: 0.9375em 0.625em;
+  margin: 0 auto;
+  box-sizing: border-box;
   text-align: right;
 }
-/* line 11, sass/ui/_footer.scss */
+/* line 15, sass/ui/_footer.scss */
 footer span {
   font-size: 0.625em;
 }
@@ -6676,5 +6712,39 @@ footer span {
 /**
  * SECTION TITLE
 */
+@media (max-width: 799px) {
+  /* line 2, sass/ui/_responsive.scss */
+  header, footer, main {
+    width: 100%;
+  }
+
+  /* line 6, sass/ui/_responsive.scss */
+  .container .profile-image .list-sn {
+    margin: 0;
+  }
+  /* line 8, sass/ui/_responsive.scss */
+  .container .profile-image .list-sn > li {
+    width: 100%;
+    display: block;
+    float: none;
+    margin: 0;
+    text-align: center;
+  }
+
+  /* line 17, sass/ui/_responsive.scss */
+  main .logo {
+    display: none;
+  }
+
+  /* line 21, sass/ui/_responsive.scss */
+  header .logo {
+    display: inline-block;
+    margin: 0 auto;
+    width: 4rem;
+    height: 4rem;
+    opacity: 1;
+    font-size: 2.375rem;
+  }
+}
 
 /*# sourceMappingURL=screen.css.map */

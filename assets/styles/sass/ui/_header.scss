@@ -3,30 +3,12 @@
 \*------------------------------------*/
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+    width: 50rem;
+    height: 3.125em;
+    margin: 0 auto;
+    text-align: center;
 
-    height: 2.1875em;
-    background: #888;
     .logo {
-        text-align: center;
-        width: 9.375rem;
-        height: 6.25rem;
-
-        -webkit-border-radius: 0 0 6.25rem 6.25rem;
-        -moz-border-radius: 0 0 6.25rem 6.25rem;
-        border-radius: 0 0 6.25rem 6.25rem;
-        background: #555;
-
-        margin: 0 auto;
-
-        font: 3.25rem 'Oleo Script', cursive;
-        line-height: 1.75;
-
-        text-shadow: 3px 3px $black1, -3px -3px $black1,
-                     3px -3px $black1, -3px 3px $black1;
+        display: none;
     }
 }

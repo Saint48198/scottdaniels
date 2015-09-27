@@ -1,0 +1,29 @@
+@media (max-width: 799px) {
+    header, footer, main {
+        width: 100%;
+    }
+
+    .container .profile-image .list-sn {
+        margin: 0;
+        > li {
+            width: 100%;
+            display: block;
+            float: none;
+            margin: 0;
+            text-align: center;
+        }
+    }
+
+    main .logo {
+        display: none;
+    }
+
+    header .logo {
+        display: inline-block;
+        margin: 0 auto;
+        width: 4rem;
+        height: 4rem;
+        opacity: 1;
+        font-size: 2.375rem;
+    }
+}

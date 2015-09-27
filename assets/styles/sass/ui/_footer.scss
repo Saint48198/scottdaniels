@@ -6,7 +6,11 @@
 */
 
 footer {
+    background: #555;
+    width: 50rem;
     padding: 0.9375em 0.625em;
+    margin: 0 auto;
+    box-sizing: border-box;
     text-align: right;
     span {
         font-size: 0.625em;
