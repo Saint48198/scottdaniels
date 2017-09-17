@@ -1,73 +1,51 @@
-'use strict';
-
-/*
- * Express Dependencies
- */
+var http = require('http');
 var express = require('express');
-var app = express();
-var port = 3000;
+var path = require('path');
+
+var favicon = require('serve-favicon');
+var logger = require('morgan');
+var methodOverride = require('method-override');
+var session = require('express-session');
+var bodyParser = require('body-parser');
+var multer = require('multer');
+var errorHandler = require('errorhandler');
 
 /*
  * Use Handlebars for templating
  */
-var exphbs = require('express3-handlebars');
+var exphbs = require('express-handlebars');
 var hbs;
 
-// For gzip compression
-app.use(express.compress());
+var app = express();
 
-/*
- * Config for Production and Development
- */
-if (process.env.NODE_ENV === 'production') {
-    // Set the default layout and locate layouts and partials
-    app.engine('handlebars', exphbs({
-        defaultLayout: 'main',
-        layoutsDir: 'dist/views/layouts/',
-        partialsDir: 'dist/views/partials/'
-    }));
 
-    // Locate the views
-    app.set('views', __dirname + '/dist/views');
 
-    // Locate the assets
-    app.use(express.static(__dirname + '/dist/assets'));
+// all environments
+app.set('port', process.env.PORT || 3000);
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
+app.use(logger('dev'));
+app.use(methodOverride());
+app.use(session({
+  resave: true,
+  saveUninitialized: true,
+  secret: 'uwotm8'
+}))
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(multer());
+app.use(express.static(path.join(__dirname, 'public')));
 
-} else {
-    app.engine('handlebars', exphbs({
-        // Default Layout and locate layouts and partials
-        defaultLayout: 'main',
-        layoutsDir: 'views/layouts/',
-        partialsDir: 'views/partials/'
-    }));
+app.get('/', function (req, res) {
+  res.render('index');
+});
 
-    // Locate the views
-    app.set('views', __dirname + '/views');
-
-    // Locate the assets
-    app.use(express.static(__dirname + '/assets'));
+// error handling middleware should be loaded after the loading the routes
+if (app.get('env') === 'development') {
+  app.use(errorHandler())
 }
 
-// Set Handlebars
-app.set('view engine', 'handlebars');
-
-
-
-/*
- * Routes
- */
-// Index Page
-app.get('/', function(request, response, next) {
-    response.render('index');
+var server = http.createServer(app);
+server.listen(app.get('port'), function () {
+  console.log('Express server listening on port ' + app.get('port'))
 });
-
-app.get('/es6', function(request, response, next) {
-    response.render('es6', { layout: 'blank'});
-});
-
-
-/*
- * Start it up
- */
-app.listen(process.env.PORT || port);
-console.log('Express started on port ' + port);
