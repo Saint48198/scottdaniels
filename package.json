@@ -1,20 +1,15 @@
 {
-  "name": "@ng-seed/universal",
-  "version": "1.3.0",
-  "description": "Seed project for Angular Universal apps featuring Server-Side Rendering (SSR), Webpack, dev/prod modes, DLLs, AoT compilation, HMR, SCSS compilation, lazy loading, config, cache, i18n, SEO, and TSLint/codelyzer",
+  "name": "scottrdaniels",
+  "version": "6.0.0",
+  "description": "Scott Daniels personal website. Provide home for all information invloving Scott Daniels including contact and socila media sites.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ng-seed/universal.git"
+    "url": "https://github.com/Saint48198/scottdaniels.git"
   },
   "author": {
-    "name": "Burak Tasci",
-    "email": "me@fulls1z3.com"
+    "name": "Scott Daniels",
+    "email": "daniels.scott.r@gmail.com"
   },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ng-seed/universal/issues"
-  },
-  "homepage": "https://github.com/ng-seed/universal#readme",
   "scripts": {
     "clean": "npm run clean:artifacts & rimraf node_modules/.cache coverage test-report.xml",
     "clean:artifacts": "rimraf .cache .server/server* .temp public",
