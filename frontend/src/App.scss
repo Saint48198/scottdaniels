@@ -1,0 +1,48 @@
+$primary-color: #282c34;
+$text-color: white;
+$font-size: calc(10px + 2vmin);
+
+.App {
+  text-align: center;
+
+  &-header {
+    background-color: $primary-color;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: $font-size;
+    color: $text-color;
+  }
+}
+
+section {
+  padding: 20px;
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+
+  input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: $primary-color;
+    color: $text-color;
+    border: none;
+    cursor: pointer;
+  }
+}
