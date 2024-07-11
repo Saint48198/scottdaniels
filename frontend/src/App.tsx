@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './App.scss';
+import './index.css';
+import Header from "./components/Header/Header";
 
 const App: React.FC = () => {
     const [message, setMessage] = useState<string>('');
@@ -16,35 +17,26 @@ const App: React.FC = () => {
     }, []);
 
     return (
-        <main className="App">
-            <header className="App-header">
-                <h1>ScottDaniels.co</h1>
-                <nav>
-                    <a href="#about">About</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#education">Education</a>
-                    <a href="#contact">Contact</a>
-                </nav>
-            </header>
+        <div className="main-content App">
+            <Header />
             <section className="header-txt">
                 <h2>Hi, I am Scott Daniels.</h2>
                 <p>Fullstack Software Developer focused on the Frontend</p>
                 <button>Download Resume</button>
             </section>
             <section id="about">
-                <h2>About Me</h2>
+            <h2>About Me</h2>
                 <div>
                     <p>I'm a passionate developer with experience in web and mobile applications.</p>
                 </div>
                 <div>
-                    <img alt={""} src={"https://placehold.co/250x400"}/>
+                    <img alt={""} src="https://placehold.co/250x400"/>
                     <div>
                         <ul className={"list-site-links-icons"}>
                             <li>
-                                <a href={""}><i>LinkedIn</i></a>
-                                <a href={""}><i>GitHub</i></a>
-                                <a href={""}><i>Instagram</i></a>
+                                <a href=""><i>LinkedIn</i></a>
+                                <a href=""><i>GitHub</i></a>
+                                <a href=""><i>Instagram</i></a>
                             </li>
                         </ul>
                     </div>
@@ -60,7 +52,7 @@ const App: React.FC = () => {
                             <span>Jul 2023 - Present</span>
                             <h3>Software Developer</h3>
                             <h4>Ford Motor Company</h4>
-                            <span className={"txt-job-location"}>Dearborn, MI</span>
+                            <span className="txt-job-location">Dearborn, MI</span>
                             <p>Full stack software engineer on embedded systems development team for a multi-national
                                 automotive manufacturing company.</p>
                         </li>
@@ -68,7 +60,7 @@ const App: React.FC = () => {
                             <span>Dec 2022 -  Jul 2023</span>
                             <h3>Lead Software Engineer </h3>
                             <h4>Clarivate</h4>
-                            <span className={"txt-job-location"}>Ann Arbor, MI</span>
+                            <span className="txt-job-location">Ann Arbor, MI</span>
                             <p>Lead UI engineer/architect for Agile web application development team for an educational
                                 software and database company.</p>
                         </li>
@@ -76,7 +68,7 @@ const App: React.FC = () => {
                             <span>Dec 2021 - Dec 2022</span>
                             <h3>Senior Software Engineer</h3>
                             <h4>Clarivate</h4>
-                            <span className={"txt-job-location"}>Ann Arbor, MI</span>
+                            <span className="txt-job-location">Ann Arbor, MI</span>
                             <p>Lead UI engineer/architect for Agile web application development team for an educational
                                 software and database company.</p>
                         </li>
@@ -84,7 +76,7 @@ const App: React.FC = () => {
                             <span>Mar 2019 - Dec 2021</span>
                             <h3>Senior Software Engineer</h3>
                             <h4>ProQuest</h4>
-                            <span className={"txt-job-location"}>Ann Arbor, MI</span>
+                            <span className="txt-job-location">Ann Arbor, MI</span>
                             <p>Lead UI engineer/architect for Agile web application development team for an educational
                                 software and database company.</p>
                         </li>
@@ -92,7 +84,7 @@ const App: React.FC = () => {
                             <span>Feb 2015 - Feb 2019</span>
                             <h3>Software Engineer</h3>
                             <h4>ProQuest</h4>
-                            <span className={"txt-job-location"}>Ann Arbor, MI</span>
+                            <span className="txt-job-location">Ann Arbor, MI</span>
                             <p>Lead UI engineer for Agile web application development team for an educational
                                 software and database company.</p>
                         </li>
@@ -100,7 +92,7 @@ const App: React.FC = () => {
                             <span>Apr 2013 - Dec 2015</span>
                             <h3>UI Engineer</h3>
                             <h4>ProQuest</h4>
-                            <span className={"txt-job-location"}>Ann Arbor, MI</span>
+                            <span className="txt-job-location">Ann Arbor, MI</span>
                             <p>Contract UI engineer for Agile web application development team for an educational
                                 software and database company.</p>
                         </li>
@@ -108,7 +100,7 @@ const App: React.FC = () => {
                             <span>Sep 2011 - Mar 2013</span>
                             <h3>Senior Web Developer</h3>
                             <h4>Digital Roots</h4>
-                            <span className={"txt-job-location"}>Novi, MI</span>
+                            <span className="txt-job-location">Novi, MI</span>
                             <p>Primary UI developer and UX designer for a social media monitoring and analytics startup.</p>
                         </li>
                     </ol>
@@ -169,25 +161,25 @@ const App: React.FC = () => {
                             <span>2014 - 2017</span>
                             <h3>Master of Science (MS) in Computer Information Systems</h3>
                             <h4>Boston University</h4>
-                            <span className={"txt-degree-location"}>Boston, MA</span>
+                            <span className="txt-degree-location">Boston, MA</span>
                         </li>
                         <li>
                             <span>2006 - 2009</span>
                             <h3>Associate in Applied Science (AAS) in Internet Professional</h3>
                             <h4>Washtenaw Community College</h4>
-                            <span className={"txt-degree-location"}>Ann Arbor, MI</span>
+                            <span className="txt-degree-location">Ann Arbor, MI</span>
                         </li>
                         <li>
                             <span>2003 - 2005</span>
                             <h3>Master of Business Administration (MBA) in E-Business</h3>
                             <h4>University of Phoenix</h4>
-                            <span className={"txt-degree-location"}>Phoenix, AZ</span>
+                            <span className="txt-degree-location">Phoenix, AZ</span>
                         </li>
                         <li>
                             <span>1996 - 2000</span>
                             <h3>Bachelor of Arts (BA) in Business Administration</h3>
                             <h4>Siena Heights University</h4>
-                            <span className={"txt-degree-location"}>Adrian, MI </span>
+                            <span className="txt-degree-location">Adrian, MI </span>
                         </li>
                     </ol>
                 </div>
@@ -205,7 +197,7 @@ const App: React.FC = () => {
             <footer>
                 <p>&copy; Copyright Scott Daniels Software Development</p>
             </footer>
-        </main>
+        </div>
     );
 }
 
