@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Skills.module.scss';
+import {Heading} from "@chakra-ui/react";
 
 const Skills: React.FC = () => {
     console.log('Styles:');
@@ -10,8 +11,8 @@ const Skills: React.FC = () => {
     }
 
     return (
-        <div>
-            <h2>Skills</h2>
+        <div className={styles.skillsContent}>
+            <Heading as='h2' mb={2}>Skills</Heading>
             <div className="container-skillList">
                 <ul>
                     <li>

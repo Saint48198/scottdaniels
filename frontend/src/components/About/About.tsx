@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './About.module.scss';
+import {Heading, Text} from "@chakra-ui/react";
 
 const About: React.FC = () => {
     console.log('Styles:');
@@ -10,10 +11,10 @@ const About: React.FC = () => {
     }
 
     return (
-        <div>
-            <h2>About Me</h2>
+        <div className={styles.aboutContent}>
+            <Heading as='h2' mb={2}>About Me</Heading>
             <div>
-                <p>I'm a passionate developer with experience in web and mobile applications.</p>
+                <Text fontSize='xl'>I'm a passionate developer with experience in web and mobile applications.</Text>
             </div>
             <div>
                 <img alt="" src="https://placehold.co/250x400"/>
