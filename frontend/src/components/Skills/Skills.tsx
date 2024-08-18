@@ -16,7 +16,7 @@ const Skills: React.FC = () => {
             <div className="container-skillList">
                 <ul>
                     <li>
-                        <h3>Frontend</h3>
+                        <Heading as='h3' size={"md"} mb={1.5}>Frontend</Heading>
                         <ul>
                             <li>HTML 5</li>
                             <li>CSS</li>
@@ -28,7 +28,7 @@ const Skills: React.FC = () => {
                         </ul>
                     </li>
                     <li>
-                        <h3>Backend</h3>
+                        <Heading as='h3' size={"md"}  mb={1.5}>Backend</Heading>
                         <ul>
                             <li>Node.js</li>
                             <li>Express</li>
@@ -39,7 +39,7 @@ const Skills: React.FC = () => {
                         </ul>
                     </li>
                     <li>
-                        <h3>Database</h3>
+                        <Heading as='h3' size={"md"} mb={1.5}>Database</Heading>
                         <ul>
                             <li>MySQL</li>
                             <li>MongoDB</li>
@@ -47,7 +47,7 @@ const Skills: React.FC = () => {
                         </ul>
                     </li>
                     <li>
-                        <h3>DevOps</h3>
+                        <Heading as='h3' size={"md"} mb={1.5}>DevOps</Heading>
                         <ul>
                             <li>Docker</li>
                             <li>AWS</li>
