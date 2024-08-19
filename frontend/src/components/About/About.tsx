@@ -19,11 +19,27 @@ const About: React.FC = () => {
             <div>
                 <img alt="" src="https://placehold.co/250x400"/>
                 <div>
-                    <ul className={"list-site-links-icons"}>
+                    <ul className="list-site-links-icons">
                         <li>
-                            <a href=""><i>LinkedIn</i></a>
-                            <a href=""><i>GitHub</i></a>
-                            <a href=""><i>Instagram</i></a>
+                            <a href="https://www.linkedin.com/in/scottrdaniels/" target="_blank" aria-label="LinkedIn">
+                                <img src="/img/linkedin-24x24.png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Saint48198" target="_blank" aria-label="GitHub">
+                                <img src="/img/github-24x24.png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/saint48198/?hl=en" target="_blank"
+                               aria-label="Instagram">
+                                <img src="/img/instagram-24x24.png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://500px.com/p/saint48198?view=photos" target="_blank" aria-label="500px">
+                                <img src="/img/500px-24x24.png" alt=""/>
+                            </a>
                         </li>
                     </ul>
                 </div>
